@@ -10,7 +10,8 @@ An interactive command-line quiz game to test your Star Wars knowledge! Challeng
 - **Quit Anytime**: Press 'q' during any question to exit early
 - **Score Tracking**: See your final score and how many questions you completed
 - **Command-Line Arguments**: Quick start by passing difficulty as an argument
-- **Color-Coded Feedback**: Visual indicators for correct/incorrect answers
+- **Color-Coded Feedback**: Visual indicators for correct/incorrect answers (may not work properly on Windows, but what does?)
+- **Cross-Platform Support**: Works on Linux, Mac, and even Windows (though we can't promise the same level of enjoyment)
 
 ## Installation
 
@@ -25,14 +26,17 @@ cd starwarsquiz
 python3 star_wars_quiz.py
 ```
 
-### Windows
+### Windows *(sigh)*
 ```cmd
 # Clone or download this repository
 cd starwarsquiz
 
-# Run the quiz (if this doesn't work, try updating your PATH or just use Linux)
+# Run the quiz (if this doesn't work, try updating your PATH, reinstalling Python, 
+# sacrificing a chicken to the registry gods, or just use a real operating system)
 python star_wars_quiz.py
 ```
+
+> **Note:** If you're experiencing issues on Windows, have you considered switching to Linux? It's free, stable, and doesn't randomly restart for updates mid-quiz.
 
 ## Usage
 
@@ -104,6 +108,20 @@ starwarsquiz/
 ├── questions.json              # Quiz questions database
 └── README.md                   # This file
 ```
+
+## Troubleshooting
+
+### The colors don't work!
+- **Linux/Mac:** This shouldn't happen. Check your terminal.
+- **Windows:** Of course they don't. Try Windows Terminal instead of CMD, or better yet, install WSL.
+
+### Python command not found!
+- **Linux/Mac:** Install Python 3 using your package manager.
+- **Windows:** Welcome to PATH variable hell. Google "add Python to PATH Windows" and prepare for a journey. Or save yourself the headache and dual-boot Linux.
+
+### The quiz works perfectly!
+- **Linux/Mac:** As expected.
+- **Windows:** Congratulations! You've achieved the impossible. Screenshot it before Windows Update breaks it.
 
 ## Contributing
 
